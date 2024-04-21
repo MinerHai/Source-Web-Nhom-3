@@ -1,0 +1,14 @@
+.product-banner {
+    width: 80%;
+    height: 358px;
+    border-radius: 10px;
+    margin: 2% auto;    /* Đặt margin auto để căn giữa */
+    overflow: hidden;   /* Đảm bảo nội dung không tràn ra khỏi div */
+    position: relative; /* Cần position để overlay có thể hoạt động */
+}
+
+.product-banner img {
+    width: 100%;
+    height: auto;
+    opacity: 1; 
+}
