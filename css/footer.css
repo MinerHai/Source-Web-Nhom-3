@@ -1,6 +1,6 @@
 /* CSS cho responsive layout và style của footer */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,6 @@ body {
     width: 80%;
     margin: auto;
     padding: 20px 0; 
-    
 }
 
 .footer {
@@ -36,6 +35,15 @@ body {
 
 .footer-nav2 {
     font-size: 10px; 
+    a{
+        color: #999999;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    :hover
+    {
+        color: white;
+    }
 }
 
 .under-footer {
@@ -48,28 +56,26 @@ body {
 }
 .footer-nav2 {
     flex: 1;
-    padding: 20px;
+   
     text-align: center;
     box-sizing: border-box;
     overflow: hidden;
-    p
-    {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-
-    }
 }
+
+
+
+
+
 
 .under-footer {
     display: flex;
+    
     width: 80%;
     margin: auto;
+   
 }
 .under-footer-content{
-padding-right: 40%;
+padding-right: 35%;
 }
 .under-footer .under-icon {
     display: flex;
@@ -81,14 +87,6 @@ padding-right: 40%;
     color: gray; 
 }
 
-.input {
-   
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    line-height: normal; 
-    vertical-align: middle; 
-}
 
 .footer-nav21{
     display: flex;
@@ -104,34 +102,54 @@ padding-right: 40%;
 
 .input {
     padding-left: 40px; 
-    padding-right: 60px; 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-right: 150px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 30%; 
     border: 1px solid #ccc;
     border-radius: 25px;
-   
-  
+    color: black;
 }
 
 .btnsub{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 25px;
-    background-color: #2abc45;
+    background-color: #00B207;
     margin-left: -30px;
+    color: white;
 }
 .sub{
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 1%;
     display: flex;
     gap: 50px;
-    
+    position: relative;
+}
+.btn-sub{
+   height: 30px;
+   margin-top: 10px;
+   
+   
+}
+.sub-button{
+    position: absolute; /* Thiết lập phần tử con là .btn-sub với vị trí tuyệt đối */
+    bottom: 50%; 
+    left: 50%; 
+    transform: translateX(-25%);
+    display: flex;
+    line-height: 12px;
 }
 .big-sub{
+    margin-top: 5px;
     background-color: #F7F7F7;
+    padding-top: 10px;
+    align-items: center;
+    position: relative;
+   
 }
 .sub-title{
     width: 30%;
@@ -140,10 +158,12 @@ padding-right: 40%;
     border-radius: 10px;
 }
 .sub-icon {
+    margin-left: 2%;
     display: flex;
     gap: 10px; 
     font-size: 24px; 
     justify-content: center; 
+    transform: translateY(35%);
 }
 
 .sub-icon a {
@@ -183,7 +203,6 @@ padding-right: 40%;
         padding:20px;
         
     }
-
     .btn-sub {
         display: flex;
         height: 20%;
@@ -199,20 +218,22 @@ padding-right: 40%;
 
    
     .big-sub {
-        position: relative;
-        flex-direction: column;
-        align-items: flex-start; 
+        font-size: 10px;
     }
-
+    .sub-button{
+        margin-left: 30px;
+    }
     .sub-icon {
         position: absolute;
-        margin-top: 10px;
-        margin-bottom: 50%;
         display: flex;
         flex-direction: row; 
-        margin-right: 30px;
         right: 10px;
         bottom: 0;
+        font-size: 20px;
+    }
+    .input {
+        padding-left: 20px; 
+        padding-right: 60px; 
     }
 }
 
@@ -232,6 +253,8 @@ padding-right: 40%;
     .footer-line {
         width: 20%; /* Điều chỉnh kích thước của footer-line */
     }
+
+    
 }
 
 

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
     {
         color: #666666;
         font-family: Poppins;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 400;
         line-height: 15.6px;
         text-align: left;
@@ -51,13 +51,12 @@ header {
     margin: 0 5px 0 5px;
     color: #666666;
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 15.6px;
     text-align: left;
     text-decoration: none;
-    
-}
+    }
 a:hover{
         color: rgb(21, 177, 224);
     }
@@ -65,13 +64,12 @@ a:hover{
 
 .middle
 {
-    
     display: flex;
     width: 80%;
     /* background-color: pink; */
     opacity: 0px;
     gap: 165px;
-    
+    height: 30px;
 
     #logo {
         gap:8px;
@@ -98,7 +96,7 @@ a:hover{
         #icon-call-now-text1
         {
             font-family: Poppins;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 21px;
             text-align: left;
@@ -109,7 +107,7 @@ a:hover{
         {
             color:  #1A1A1A;
             font-family: Poppins;
-            font-size: 20px;
+            font-size: 12px;
             font-weight: 500;
             line-height: 30px;
             text-align: left;
@@ -118,19 +116,15 @@ a:hover{
         {
             padding-right: 1%;
             color: #1A1A1A;
-            font:20px;
             transform: translateY(20%);
         }
 
     }
-        
-    
-    
         #search-bar input[type="text"] {
             border-radius: 5px 0px 0px 5px;
             padding: 10px 30px;         
             border: 1px solid #ddd;
-            font-size: 16px;
+            font-size: 12px;
             background: url("../images/Search.png") no-repeat; 
             background-position: 5px center; /* Đặt vị trí của icon */
         }
@@ -145,12 +139,11 @@ a:hover{
         }
     
         #search-bar button {
-            padding: 10px 20px;
             border-radius: 0px 5px 5px 0px;
             border: none;
             background-color: #00B207; /* Màu button */ 
             color: white;
-            font-size: 16px;
+            font-size: 12px;
         }
         #search-bar button:hover
         {
@@ -169,15 +162,14 @@ a:hover{
         #search-bar input
         {
             width: 1%;
-            font-size: 10px;
+            font-size: 8px;
         }
         #search-bar button {
             padding: 1px 2px;
-            font-size: 16px;
+            font-size: 14px;
         }
         .icon-call-now
         {
-            
             width: 50%;
             max-width: 500px; 
             
@@ -223,7 +215,7 @@ a:hover{
         transform: translateY(-20%);
         left: 0;
         position: absolute;
-        font-size: 30px;
+        font-size: 28px;
     }
    
 }
@@ -244,14 +236,14 @@ a:hover{
         color: #191919;
         text-decoration: none;
         font-family: Poppins;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 21px;
         text-align: left;
     }
     #select-menu-item
     {
-        font-size: 25px;
+        font-size: 23px;
     }
 
 }
@@ -282,7 +274,7 @@ a:hover{
         margin: 0 5px 0 5px;
         color: #999999;
         font-family: Poppins;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 400;
         line-height: 15.6px;
         text-align: left;
@@ -300,7 +292,7 @@ a:hover{
         gap: 10%;
         a
         {
-            font-size: 30px;
+            font-size: 28px;
         }
     }
 
@@ -316,7 +308,7 @@ a:hover{
         font-size: 10px;
         gap: 10px;
         a{
-        font-size: 10px;}
+        font-size: 8px;}
 
         .nav-link-account{
             
