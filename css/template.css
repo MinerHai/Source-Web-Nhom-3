@@ -44,8 +44,7 @@ header {
 }
 
 
-.nav-log-sign
-{
+.nav-log-sign{
     display: flex;
     a{
     margin: 0 5px 0 5px;
@@ -62,8 +61,7 @@ a:hover{
     }
 }
 
-.middle
-{
+.middle{
     display: flex;
     width: 80%;
     /* background-color: pink; */
@@ -71,30 +69,26 @@ a:hover{
     gap: 165px;
     height: 30px;
 
-    #logo {
+    #logo{
         gap:8px;
         /* background-color: aqua; */
     }
-    #search-bar
-    {
+    #search-bar{
         border-radius: 5px 0px 0px 5px;
         display: flex;
         width: Hug (498px)px;
         height: Hug (45px)px;
     }
-    .icon-call-now
-    {
+    .icon-call-now{
 
         display: flex;
         width: 20%;
         font-size: 25px;
-        .icon-call-now-content
-        {
+        .icon-call-now-content{
             color:#1A1A1A;
             
         }
-        #icon-call-now-text1
-        {
+        #icon-call-now-text1{
             font-family: Poppins;
             font-size: 12px;
             font-weight: 400;
@@ -103,8 +97,7 @@ a:hover{
             color: #999999;
 
         }
-        #icon-call-now-text2
-        {
+        #icon-call-now-text2{
             color:  #1A1A1A;
             font-family: Poppins;
             font-size: 12px;
@@ -112,8 +105,7 @@ a:hover{
             line-height: 30px;
             text-align: left;
         }
-        .call-phone-icon
-        {
+        .call-phone-icon{
             padding-right: 1%;
             color: #1A1A1A;
             transform: translateY(20%);
@@ -128,8 +120,7 @@ a:hover{
             background: url("../images/Search.png") no-repeat; 
             background-position: 5px center; /* Đặt vị trí của icon */
         }
-        #search-bar.input::placeholder
-        {
+        #search-bar.input::placeholder{
             font-family: Poppins;
             font-size: 15px;
             font-weight: 400;
@@ -145,8 +136,7 @@ a:hover{
             color: white;
             font-size: 12px;
         }
-        #search-bar button:hover
-        {
+        #search-bar button:hover{
             background-color: #028a06;
         }
        
@@ -159,8 +149,7 @@ a:hover{
             max-width: 650px; 
         }
        
-        #search-bar input
-        {
+        #search-bar input{
             width: 1%;
             font-size: 8px;
         }
@@ -173,16 +162,13 @@ a:hover{
             width: 50%;
             max-width: 500px; 
             
-            #icon-call-now-text1
-            {
+            #icon-call-now-text1{
                 display: none;
             }
-            #icon-call-now-text2
-            {
+            #icon-call-now-text2{
                 font-size: 8px;
-            }
-            .call-phone-icon
-            {
+            } 
+            .call-phone-icon{
                 font-size: 15px;
             }
         }
@@ -190,8 +176,7 @@ a:hover{
 
 }
 
-.nav-link-bar
-{
+.nav-link-bar{
     position: relative;
     display: flex;
     width: 100%;
@@ -212,7 +197,6 @@ a:hover{
     cursor: pointer;
     .select-menu-icon
     {
-        transform: translateY(-20%);
         left: 0;
         position: absolute;
         font-size: 28px;
@@ -221,6 +205,7 @@ a:hover{
 }
 
 .select-items {
+    z-index: 2;
     display: none;
     position: absolute;
     background-color: white;
@@ -241,8 +226,7 @@ a:hover{
         line-height: 21px;
         text-align: left;
     }
-    #select-menu-item
-    {
+    #select-menu-item{
         font-size: 23px;
     }
 
@@ -262,8 +246,7 @@ a:hover{
     
 }
   
-.nav-link
-{
+.nav-link{
     transform: translateY(35%);
     display: flex;
     width: 100%;
@@ -273,7 +256,6 @@ a:hover{
         display: flex;
         margin: 0 5px 0 5px;
         color: #999999;
-        font-family: Poppins;
         font-size: 13px;
         font-weight: 400;
         line-height: 15.6px;
@@ -283,8 +265,7 @@ a:hover{
     a:hover{
         color: white;
     }
-    .nav-link-account
-    {
+    .nav-link-account{
         position: absolute;
         display: flex;
         right: 0;
@@ -303,8 +284,7 @@ a:hover{
     .middle{
         gap:0px;
     }
-    .nav-link
-    {
+    .nav-link{
         font-size: 10px;
         gap: 10px;
         a{
@@ -322,15 +302,13 @@ a:hover{
         background-color: #333333;
         padding: 15px 10px;
         font-size: 10px;
-        .select-menu-icon
-        {
-            transform: translateY(-3%);
+
+        .select-menu-icon{
             left: 0;
             font-size: 10px;
         }
     }
-    .select-items
-    {
+    .select-items{
         a{
             line-height: 8px;
             font-size: 10px;
@@ -340,7 +318,10 @@ a:hover{
         }
     }
     
-
+    .content-wrapper {
+        padding-left: 0%;
+        /* background-color: rgb(47, 192, 11); */
+    }
 
     
     

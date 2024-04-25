@@ -1,46 +1,273 @@
 .product-banner {
     width: 80%;
-    height: 358px;
+    height: 260px;
     border-radius: 10px;
     margin: 2% auto;    /* Đặt margin auto để căn giữa */
     overflow: hidden;   /* Đảm bảo nội dung không tràn ra khỏi div */
     position: relative; 
+    /* background-color: blue; */
 }
 
 .product-banner img {
     width: 100%;
-    height: auto;
     opacity: 1; 
-    z-index: -1;
     position: absolute;
+    
 }
-.product-banner-content{
-    align-items: center;
-    display: flex;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background-color: red;
-    z-index: 1;
-}
-.product-banner-content-discount
+
+@media only screen and (min-width: 300px) and (max-width: 650px)
 {
+    .product-banner{ /* Chỉnh kích thước cho banner */
+        height: 80px;
+    }
+}
+/* -----------------------------------------------*/
+.product-act-fil
+{
+    margin: 0;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+
+    p
+    {
+        color: #808080; font-size: 12px;
+    }
+    
+}
+
+.product-act-fil-left{
+    gap: 5%;
+    display:  flex;
+    left: 0;
+    /* background-color: blue; */
+}
+
+.product-act-fil-right{
+    gap: 5%;
+    height: 100%;
+    display: flex;
     position: absolute;
+    right: 0;
+    /* background-color: yellow; */
+}
+
+.product-act-select {
+    padding: 2%; 
+    font-size: 12px; 
+    border: 0.1px solid #E6E6E6; 
+    border-radius: 3px; 
+    background-color: #ffffff; 
+    color: #4C4C4C; 
+}
+
+/* Kiểu cho tùy chọn */
+.product-select option {
+    padding: 10px; 
+    font-size: 12px;
+    background-color: #f9f9f9; 
+    color: #333; 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 650px)
+{
+    .product-act-select {
+        padding: 2px; 
+        font-size: 6px; 
+    }
+    
+    .product-select option {
+        padding: 0px; 
+        font-size: 12px;
+        background-color: #f9f9f9; 
+    }
+    .product-act-fil 
+    {
+        p
+        {font-size: 7px;}
+    }
+}
+
+/* ------------------------PRODUCT------------------------------------*/
+.content-product{
+    width: 80%;
+    background-color: white;
     align-items: center;
+}
+.product-container {
+    position: relative;    
+    height: 300px;
+    margin: 1%;
+    float: left;
+    width: 22%;
+    background-color: white;
+    border-color: #E6E6E6;
+    border-style:solid;
+    border-radius: 3%;
+    border-width: 1px;
+    
+}
+
+.product-img {
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 80%;
+    opacity: 1;
+    overflow: hidden; /* Ngăn hình ảnh tràn ra khỏi phần tử cha */
+}
+.product-img img {
+    margin: 3%;
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; /* Loại bỏ khoảng trống ở dưới hình ảnh */
+}
+
+.product-rate-icon
+{
+    color: #FF8A00;
+    font-size: 5px;
+}
+.product-content
+{
+    margin: 5%;
+    /* background-color: red; */
+    .product-content-name
+    {
+        font-size: 10px;
+        color: #2C742F;
+    }
+    .product-content-price
+    {
+        font-size: 11px;
+    }
+}
+
+.product-action-icon
+{
+    width: 15%;
+    height: 90%;
+    margin: 10%;
+    right:0;
+    top: 0;
+    /* background-color: chocolate; */
+    position: absolute;
+    z-index: 2;
+    .product-cirle-icon
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #F2F2F2;
+
+        
+        width: 100%;
+        height: 10%;
+        font-size: 10px;
+        background-color: white;
+
+        display:none;
+    }
+    :hover
+        {
+            background-color: #00B207;
+            border-color: #00B207;
+            color: white;
+            
+        }
+    #product-bottom-icon
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 10%;
+        margin-bottom: 50%;
+    }
+}
+
+.product-container:hover {
+    border-color: #00B207; 
+}
+
+.product-container:hover .product-action-icon .product-cirle-icon {
+    display: flex; 
+}
+
+@media only screen and (min-width: 300px) and (max-width: 650px)
+{
+    .product-action-icon{
+        .product-cirle-icon{
+            font-size: 5px;   
+        }
+    }
+    
+    .product-content{
+        .product-content-name{
+            font-size: 6px;
+        }
+        .product-content-price{
+            font-size: 7px;
+        }
+    }
+    .product-container{
+        height: 160px;
+        width: 30%;
+    }
+    
+}
+/* -------------------------------NEXT PAGE BAR---------------------------------------- */
+.next-page-bar{
+    top:0;
+    width: 80%;
     display: flex;
     justify-content: center;
-    width: 20%;
-    height: 25%;
-    background-color: orange;
-    right: 0;
-    border-radius: 100%;
-    z-index: 2;
+    .next-page-container{
+        gap: 5%;
+        width: 40%;
+        justify-content: space-around;
+        display: flex;
+        .next-page-icon{
+            text-align: center;
+            width: 100%;
+
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #D9D9D9;
+        }
+        .next-page-num{
+            text-align: center;
+            width: 100%;
+            border-radius: 50%;
+            border: none;
+        }
+    }
+    :hover.next-page-num{
+        background-color: #00B207;
+        color: white;
+    }
+    :hover.next-page-icon{
+        background-color: #D9D9D9;
+        color: #B3B3B3;
+        
+    }
+    
 }
-.product-banner-content-text
-{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    background-color: blue;
-    z-index: 2;
+@media only screen and (min-width: 300px) and (max-width: 650px){
+    
+    .next-page-bar{
+        top:0;
+        width: 80%;
+
+        .next-page-container{
+            gap: 5%;
+            width: 100%;
+        }
+    }
 }
