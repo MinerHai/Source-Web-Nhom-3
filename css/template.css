@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +19,7 @@ header {
     color: #fff;
     text-align: center;
 }
+
 
 .content-wrapper {
     padding-left: 10%;
@@ -81,36 +92,13 @@ a:hover{
     }
     .icon-call-now{
 
-        display: flex;
         width: 20%;
-        font-size: 25px;
-        .icon-call-now-content{
-            color:#1A1A1A;
-            
+        margin-left: 5%;
+        .call-phone-icon img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
-        #icon-call-now-text1{
-            font-family: Poppins;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 21px;
-            text-align: left;
-            color: #999999;
-
-        }
-        #icon-call-now-text2{
-            color:  #1A1A1A;
-            font-family: Poppins;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 30px;
-            text-align: left;
-        }
-        .call-phone-icon{
-            padding-right: 1%;
-            color: #1A1A1A;
-            transform: translateY(20%);
-        }
-
     }
         #search-bar input[type="text"] {
             border-radius: 5px 0px 0px 5px;
@@ -159,18 +147,7 @@ a:hover{
         }
         .icon-call-now
         {
-            width: 50%;
-            max-width: 500px; 
-            
-            #icon-call-now-text1{
-                display: none;
-            }
-            #icon-call-now-text2{
-                font-size: 8px;
-            } 
-            .call-phone-icon{
-                font-size: 15px;
-            }
+            width: 100%;
         }
     }
 
@@ -212,23 +189,35 @@ a:hover{
     color: black;
     border-top: none;
     width: 100%;
-    max-height: 420px;
+    max-height: 450px;
     overflow-y: auto;
     line-height: 30px;
+    
     a{
-        gap: 10%;
+        gap: 5%;
         display: flex;
         color: #191919;
         text-decoration: none;
-        font-family: Poppins;
         font-size: 15px;
+
         font-weight: 500;
         line-height: 21px;
+
         text-align: left;
+        align-items: center;
     }
-    #select-menu-item{
-        font-size: 23px;
+    .select-icon{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
+    .select-icon img{
+        width: 100%;
+        height: 100%;
+    }
+    
 
 }
 
@@ -247,6 +236,7 @@ a:hover{
 }
   
 .nav-link{
+    margin-left: 3%;
     transform: translateY(35%);
     display: flex;
     width: 100%;
@@ -256,7 +246,7 @@ a:hover{
         display: flex;
         margin: 0 5px 0 5px;
         color: #999999;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 15.6px;
         text-align: left;
@@ -270,12 +260,14 @@ a:hover{
         display: flex;
         right: 0;
         margin-right: 10%;
-        gap: 10%;
-        a
-        {
-            font-size: 28px;
+        width: 10%;
+        img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
     }
+    
 
 }
 
@@ -285,36 +277,44 @@ a:hover{
         gap:0px;
     }
     .nav-link{
+        margin-left: 1%;
         font-size: 10px;
         gap: 10px;
         a{
         font-size: 8px;}
 
         .nav-link-account{
-            
-            gap: 1%;
             margin-right: 1%;
-            a{
-            font-size: 15px;}
+            width: 20%;
+
         }
     }
     .select-selected {
         background-color: #333333;
         padding: 15px 10px;
         font-size: 10px;
+        
 
         .select-menu-icon{
             left: 0;
             font-size: 10px;
+            .menu-img img{
+                display: none;
+            }
         }
     }
     .select-items{
+        width: 200%;
         a{
             line-height: 8px;
             font-size: 10px;
         }
-        #select-menu-item{
-        font-size: 10px;
+        .per-item{
+            padding: 0;
+            padding-left: 5%;
+            padding-top:3%;
+            padding-bottom: 3%;
+
         }
     }
     

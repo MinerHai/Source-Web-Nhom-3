@@ -127,8 +127,19 @@
 
 .product-rate-icon
 {
-    color: #FF8A00;
-    font-size: 5px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+    width: 30%;
+    /* background-color: red; */
+    
+}
+
+.product-rate-icon img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .product-content
 {
@@ -157,6 +168,7 @@
     z-index: 2;
     .product-cirle-icon
     {
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -165,15 +177,15 @@
         border-style: solid;
         border-width: 1px;
         border-color: #F2F2F2;
-
+        background-color: white;
         
         width: 100%;
         height: 10%;
         font-size: 10px;
-        background-color: white;
 
         display:none;
     }
+    
     :hover
         {
             background-color: #00B207;
@@ -183,6 +195,9 @@
         }
     #product-bottom-icon
     {
+        align-items: center;
+        justify-content: center;
+        display: flex;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -204,6 +219,11 @@
     .product-action-icon{
         .product-cirle-icon{
             font-size: 5px;   
+        }
+        .product-cirle-icon img{
+            width: 80%;
+            height: 80%;
+            overflow: hidden;
         }
     }
     
@@ -233,6 +253,9 @@
         justify-content: space-around;
         display: flex;
         .next-page-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             width: 100%;
 
