@@ -2,13 +2,13 @@
     margin: 3%;
     width: 80%;
 }
-/* -----------------------------FIRST BANNER---------------------- */
-.fisrt-banner{
+/* -----------------------------SHORT BANNER---------------------- */
+.short-banner{
     width: 100%;
     height: 100%;
     display: flex;
 
-    .fisrt-banner-text{
+    .short-banner-text{
         margin-top: 5%;
         display: flex;
         flex-direction: column;
@@ -16,21 +16,42 @@
         width: 50%;
         height: 85%;
         text-align: left;
-       
+        .short-banner-bar-text{
+            gap:2%;
+            margin-bottom: 1%;
+            height: 5%;
+            display: flex;
+            align-items: center;
+            .icon{
+                background-color: #E6F8E7;
+                width: 4%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                border-radius: 50%;
+                border: none;
+            }
+        }
     }
 
-    .fisrt-banner-img{
+    .short-banner-img{
         border: none;
         border-radius: 5px;
         width: 50%;
     }
+    #img-2{
+        width: 120%;
+    }
 
-    .fisrt-banner-img img{
+    .short-banner-img img{
         width: 100%;
         height: 100%;
         overflow: hidden;
         border-radius: 5px;
     }
+    
 }
 #banner-text{
     text-align: left;
@@ -55,6 +76,10 @@
             font-size: 6px;
         }
     }
+    #img-2{
+        height: 70%;
+    }
+
 }
 /* ----------------------------------LONG BANER----------------------- */
 .long-banner{
@@ -140,6 +165,8 @@
             width: 100%;
             height: 100%;
             .feature-bar{
+                width: 49%;
+                height: 1%;
                 .icons{
                     padding-bottom: 2.5%;
                     padding-top: 2.5%;
@@ -153,7 +180,6 @@
         }
         p{
             font-size: 5px;
-            font-family:
         }
     }
     

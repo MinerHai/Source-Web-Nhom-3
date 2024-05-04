@@ -136,6 +136,7 @@ padding-right: 35%;
    
 }
 .sub-button{
+    align-items: center;
     position: absolute; /* Thiết lập phần tử con là .btn-sub với vị trí tuyệt đối */
     bottom: 50%; 
     left: 50%; 
@@ -158,12 +159,24 @@ padding-right: 35%;
     border-radius: 10px;
 }
 .sub-icon {
+    transform: translateY(15%);
     margin-left: 2%;
     display: flex;
     gap: 10px; 
-    font-size: 24px; 
-    justify-content: center; 
-    transform: translateY(35%);
+    .the-icon{
+        padding: 10px;
+        border-radius: 50%;
+        width: 25%;
+    }
+    .the-icon img
+    {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .the-icon:hover{
+        background-color: #00B207;
+    }
 }
 
 .sub-icon a {

@@ -19,3 +19,5 @@ incrementBtn.addEventListener('click', () => {
 function updateValue() {
   valueSpan.textContent = value;
 }
+
+
