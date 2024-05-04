@@ -130,6 +130,9 @@ a:hover{
        
     /*  media query cho từ 300px đến 650px nhá  */
     @media only screen and (min-width: 300px) and (max-width: 650px) {
+        .under-icon img{
+            width: 50px;
+        }
         
         
         #logo {
@@ -275,6 +278,10 @@ a:hover{
 @media only screen and (min-width: 300px) and (max-width: 650px) {
     .middle{
         gap:0px;
+    }
+    .under-footer {
+        flex-direction: column; /* Xếp các phần tử con theo chiều dọc khi màn hình có kích thước nhỏ hơn 768px */
+        align-items: center; /* Căn các phần tử con vào giữa theo chiều ngang */
     }
     .nav-link{
         margin-left: 1%;
