@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/cart-style.css">
+        <title>Cart</title>
+        <script src="../js/product-store.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <div class="nav">
+                    <!-- SMALL ONE -->
+                    <div class="content-wrapper" style="padding-top: 1%;">
+                        <div class="contact">
+                            <div><img src="../images/Map-Pin.png" alt=""></div>
+                            <div class="contact-text"> Store Location: Lincoln- 344, Illinois, Chicago, USA</div> 
+                        </div>
+    
+                        <!-- LOGIN-SIGN-LINK -->
+                        <div class="nav-log-sign">
+                            <div style="margin-right:10px;"><img src="../images/ENG.png" alt="ENG"></div>
+                            <div style="margin-right:20px;"><img src="../images/USD.png" alt="USD"></div>
+                            |
+                            <a href="#">Sign In </a>
+                            /
+                            <a href="#">Sign Up </a>
+                        </div>
+                        
+                    </div>
+                    <!-- MIDLE -->
+                    <hr style="color:#A35DFE; opacity: 0.3;"> 
+                    <div class="content-wrapper" style="margin-top: 15px;">
+                            <div class="middle">
+                                <div id="logo"><a href="template.html"><img src="../images/LogoLogo.png" alt="" style="max-width: 100%;  height: auto;"></a></div>
+                                <div id="search-bar">
+                                    <input type="text" placeholder="Search...">
+                                    <button type="submit">Search</button>
+                                </div>
+                                <div class="icon-call-now">
+                                    <div><img src="../images/product-icon/heart-white.png" alt=""></div>
+                                    <div><img src="../images/product-icon/Devider.png" alt=""></div>
+                                    <a href="../html/cart.html" class="cart-shop">
+                                        <img src="../images/product-icon/cart-bag-black.png" alt="">
+                                        <div class="product-cnt"><span id="count-sp">0</span></div>
+                                    </a>
+                                    <div class="text">
+                                        <p>Shopping cart:</p>
+                                        <p style="font-size: 14px;">$<span class="prices" id="prices">57.00</span></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                    <!--LINK-->
+                    <div class="nav-link-bar">
+                        <div class="custom-select">
+                            <div class="select-selected">
+                                <div class="select-menu-icon">
+                                    <div class="menu-img"><img src="../images/menu-icon/menu-icon.png" alt=""></div>
+                                </div>
+                                All Categories
+                            </div>
+                            <div class="select-items">
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/apple-icon.png" alt=""></div>Fresh Fruit</a></div>
+                                <div class="per-item"><a href="../html/products.html"><div class="select-icon"><img src="../images/menu-icon/salad-icon.png" alt=""></div>Vegetables</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/fish-icon.png"  alt=""></div>River Fish</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/meat-icon.png"  alt=""></div>Chicken & Meat</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/coffee-icon.png"alt=""></div>Drink & Water</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/ice-cream-icon.png" alt=""></div>Yogurt & Ice Cream</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/pie-icon.png" alt=""></div>Cake & Bread</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/cupcake-icon.png" alt=""></div>Butter & Cream</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/food-icon.png" alt=""></div>Cooking</a></div>
+                                <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/plus-solid 1.png" alt=""></div>View all Category</a></div>
+                            </div>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#">Home</a>
+                            <a href="#">Shop </a>
+                            <a href="#">Pages </a>
+                            <a href="#">Blog </a>
+                            <a href="../html/about-page.html">About Us </a>
+                            <a href="#">Contact Us </a>
+                            <div class="nav-link-account">
+                                <img src="../images/Call-Now.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="content-wrapper">
+                <div class="content">
+                <div style="display: flex; align-items: center; justify-content: center;"><h1>My Shopping Cart</h1></div>
+                <div class="cart-container">
+                    <div class="left-content">
+                        <div class="per-line">
+                            <div class="cols" id="col1"><p id="white-text">PRODUCT</p></div>
+                            <div class="cols" id="col2"><p id="white-text">PRICE</p></div>
+                            <div class="cols" id="col3"><p id="white-text">Quantity</p></div>
+                            <div class="cols" id="col4"><p id="white-text">Subtotal</p></div>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.3; display: block; margin: 0;">
+                        <div id="cart-items">
+                        </div>
+                        <div class="CTA-btn">
+                            <a href="../html/products.html"><button><p>Return to shop</p></button></a>
+                            <button onclick="tinhTien()"><p>Update to cart</p></button>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <h1>Cart Total</h1>
+                        <div class="rows"id="row1">
+                            <div class="name-row"><span>Subtotal:</span></div>
+                            <p class="item-row" id="Subtotal">$0.00</p>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.2; display: block; margin: 0;">
+                        <div class="rows"id="row2">
+                            <div class="name-row"><span>Shipping:</span></div>
+                            <p class="item-row">Free</p>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.2; display: block; margin: 0;">
+                        <div class="rows"id="row3">
+                            <div class="name-row"><span>Total:</span></div>
+                            <p class="item-row" id="final-total" style="font-weight: bold;">$0.00</p>
+                        </div>
+
+                        <button class="checkout-btn" onclick="comingsoon()">Proceed to checkout</button>
+                    </div>
+                </div>
+
+                <div class="coupon-code">
+                    <p>Coupon Code</p>
+                    <input type="text" id="coupon-code" placeholder="Enter code">
+                    <button type="button" onclick="comingsoon()">Apply Coupon</button>
+                </div>
+                
+                
+                
+                </div>
+            </div>
+            <footer>
+                <div class="footer-search">
+                    <div class="big-sub">
+                        <div class="sub">
+                            <div class="sub-title">
+                                <div><h1 style="font-weight: bold;">Subcribe our Newsletter</h1></div>
+                                <div><p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna</p></div>
+                            </div>
+                            <div class="sub-button">
+                                <div class="btn-sub">
+                                    <input type="text" class="input" placeholder="Your email address">
+                                    <input type="submit" value="subcribse" class="btnsub">
+                                </div>
+                                <div class="sub-icon">
+                                    <div class="the-icon">
+                                        <a href="#"><img src="../images/social-icon/facebook.png" alt=""></a>
+                                    </div>
+                                    <div class="the-icon">
+                                        <a href="#"><img src="../images/social-icon/twitter.png" alt=""></a>
+                                    </div>
+                                    <div class="the-icon">
+                                        <a href="#"><img src="../images/social-icon/printest.png" alt=""></a>
+                                    </div>
+                                    <div class="the-icon">
+                                        <a href="#"><img src="../images/social-icon/instagram-1.png" alt=""></a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="big-footer">
+                    <div class="footer">
+                        <div class="foooter-nav1">
+                            <div class="footer-title">
+                                <div class="icon-footer"><img src="../images/Group (3).png" alt=""></div>
+                                <div class="title-footer"><h1 style="font-weight: bold;">Ecobazar</h1></div>
+                            </div>
+                            <div class="content-footer"><p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p></div>
+                            <div class="footer-phone">
+                                <div><p>(219) 555-0114</p></div>
+                                <div><p style="color: #999999;">or</p></div>
+                                <div><p>Proxy@gmail.com</p></div>
+                            </div>
+                        </div>
+                        <div class="footer-nav21">
+                            <div class="footer-nav2">
+                                <div><p><b>My Account</b></p><br>
+                                <a href=""><p>My Account</p></a><br>
+                                <a href=""><p>Order History</p></a><br>
+                                <a href=""><p>Shoping Cart</p></a><br>
+                                <a href=""><p>Wishlist</p></a><br>
+                                </div>
+                            </div>
+                            <div class="footer-nav2">
+                                <div><p><b>Helps</b></p><br>
+                                <a href=""><p>Contacts</p></a><br>
+                                <a href=""><p>Faqs</p></a><br>
+                                <a href=""><p>Terms & Condition</p></a><br>
+                                <a href=""><p>Privacy Policy</p></a><br>
+                                </div>
+                            </div>
+                            <div class="footer-nav2">
+                                <div><p><b>Proxy</b></p><br>
+                                <a href=""><p>About</p></a><br>
+                                <a href=""><p>Shop</p></a><br>
+                                <a href=""><p>Product</p></a><br>
+                                <a href=""><p>Track Order</p></a><br>
+                                </div>
+                            </div>
+                            <div class="footer-nav2">
+                                <div><p><b>Categories</b></p><br>
+                                <a href=""><p>Fruits & Vegetables</p></a><br>
+                                <a href=""><p>Meat & Fish</p></a><br>
+                                <a href=""><p>Bread & Bakery</p></a><br>
+                                <a href=""><p>Beauty & Health</p></a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="color:#A35DFE; opacity: 0.3;"> 
+                    <div class="under-footer">
+                        <div class="under-footer-content"><p style="color: gray;">Ecobazar eCommerce © 2021. All Rights Reserved</p></div>
+                        <div class="under-icon">
+                            <div><img src="../images/Method=ApplePay (1).png" alt=""></div>
+                            <div><img src="../images/Method=Visa (1).png" alt=""></div>
+                            <div><img src="../images/Method=Discover (1).png" alt=""></div>
+                            <div><img src="../images/Cart (2).png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+    </html>

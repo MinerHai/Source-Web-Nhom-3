@@ -19,12 +19,7 @@
     width: 5%;
     height: 80%;
     gap: 5%;
-    :hover
-    {
-        border-style: solid ;
-        border-color: #00B207;
-        border-width: 1px;
-    }
+    
     
 }
 .big-img-product img ,.quick-view-img img {
@@ -34,6 +29,19 @@
 
 .big-img-product{
     width: 40%;
+    display: none;
+}
+
+.btn-img{
+    padding: 0;
+    border: none;
+    background-color: white;
+    :hover
+    {
+        border-style: solid ;
+        border-color: #00B207;
+        border-width: 1px;
+    }
 }
 
 .form-content{

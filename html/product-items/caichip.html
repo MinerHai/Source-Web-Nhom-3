@@ -9,19 +9,28 @@
 <body>
     <script src="../../js/product-store.js"></script>
     <div class="overlay"></div>
-    <div class="form-container">
+    <div class="form-page">
         <button class="close-btn" onclick="closeForm()">X</button>
         <div class="quick-view-img">
             <div><img src="../../images/product-icon/arrow-up.png" alt=""></div>
-            <img src="../../images/caichip.jpg" alt="">
-            <img src="../../images/rau-1.jpg" alt="">
-            <img src="../../images/rau2.jpg" alt="">
-            <img src="../../images/rau-4.jpg" alt="">
+            <button class="btn-img" onclick="showForm('form1','','big-img-product')"><img src="../../images/caichip.jpg" alt=""></button>
+            <button class="btn-img" onclick="showForm('form2','','big-img-product')"><img src="../../images/rau-1.jpg" alt=""></button>
+            <button class="btn-img" onclick="showForm('form3','','big-img-product')"><img src="../../images/rau2.jpg" alt=""></button>
+            <button class="btn-img" onclick="showForm('form4','','big-img-product')"><img src="../../images/rau-4.jpg" alt=""></button>
             <div><img src="../../images/product-icon/arrow-down.png" alt=""></div>
         </div>
 
-        <div class="big-img-product">
+        <div class="big-img-product" id="form1" style="display: block;">
             <img src="../../images/caichip.jpg" alt="">
+        </div>
+        <div class="big-img-product" id="form2">
+            <img src="../../images/rau-1.jpg" alt="">
+        </div>
+        <div class="big-img-product" id="form3">
+            <img src="../../images/rau2.jpg" alt="">
+        </div>
+        <div class="big-img-product" id="form4">
+            <img src="../../images/rau-4.jpg" alt="">
         </div>
         <div class="form-content">
             <div class="form-content-header">
