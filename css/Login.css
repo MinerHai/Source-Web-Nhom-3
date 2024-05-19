@@ -1,0 +1,103 @@
+@media only screen and (min-width: 300px) and (max-width: 650px){
+   .content_password_login{
+      height: 100%;
+      width: 100%;
+      margin-left: 0px;
+   }
+   
+}
+.content{
+    background-color: white;
+    min-height: 550px;
+    
+}
+.content_password_login{
+    
+    border: 1px solid #fbf9f9;
+    border-radius: 7px;
+    width: 550px;
+    height: 100%;
+    margin-left: 470px;
+    box-shadow: 10px 10px  20px 20px rgba(232, 232, 232, 0.5) ;
+    margin-top: 80px;  
+    padding-top: 2px; 
+    padding-bottom: 10px; 
+      
+}
+
+.input_content_password{
+
+    display: flex;
+    flex-direction: column;/*3 cái thành hàng dọc*/
+    gap:13px;/*gap hàng dọc*/
+    padding-left: 20px;
+   
+}
+
+
+
+.input_password_content:focus-visible{
+    outline: none;
+}
+/*3 cái thẻ */
+.input_login_password{
+    border: 1px solid #e8e3e3;
+    padding:10px 7px;
+    width: 89%;
+    height: 25px;
+    display: flex;
+    gap:250px;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+.input_password_content{
+    border: none;
+}
+
+input[type="checkbox"] {
+    /*transform: scaleX(2) scaleY(1,96); căn theo chiều ngang 2x avf chieu doc 1x*/
+    width: 19px;
+    height: 19px;
+    
+  }
+.remember_password_login{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: white;
+    
+}
+.button_login_content{
+    border: 1px solid #a8a7a7;
+    background-color: #00B207;
+    border-radius: 35px;
+    width: 89%;
+    height: 42px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    margin-left: 35px;
+    
+}
+.button_login_content:hover{
+    cursor: pointer;
+    background-color: rgb(226, 226, 218);
+}
+.button_login_content:hover .create_login{
+    color:rgb(58, 55, 55);
+}
+.create_login{
+    padding-top: 5px;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 19px;
+}
+.find_login{
+    padding-left: 20px;
+    padding-top: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+
