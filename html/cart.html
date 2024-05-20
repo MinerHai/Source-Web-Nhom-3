@@ -5,9 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/template.css">
         <link rel="stylesheet" href="../css/footer.css">
-        <title>TEMPLATE</title>
+        <link rel="stylesheet" href="../css/cart-style.css">
+        <title>Cart</title>
         <script src="../js/product-store.js"></script>
+        
     </head>
+    
     <body>
         <div class="container">
             <header>
@@ -93,39 +96,52 @@
             
             <div class="content-wrapper">
                 <div class="content">
-                <!-- Nội dung của trang web -->
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                        
-                    <!-- Các phần khác -->
+                <div style="display: flex; align-items: center; justify-content: center;"><h1>My Shopping Cart</h1></div>
+                <div class="cart-container">
+                    <div class="left-content">
+                        <div class="per-line">
+                            <div class="cols" id="col1"><p id="white-text">PRODUCT</p></div>
+                            <div class="cols" id="col2"><p id="white-text">PRICE</p></div>
+                            <div class="cols" id="col3"><p id="white-text">Quantity</p></div>
+                            <div class="cols" id="col4"><p id="white-text">Subtotal</p></div>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.3; display: block; margin: 0;">
+                        <div id="cart-items">
+                        </div>
+                        <div class="CTA-btn">
+                            <a href="../html/products.html"><button><p>Return to shop</p></button></a>
+                            <button onclick="tinhTien()"><p>Update to cart</p></button>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <h1>Cart Total</h1>
+                        <div class="rows"id="row1">
+                            <div class="name-row"><span>Subtotal:</span></div>
+                            <p class="item-row" id="Subtotal">$0.00</p>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.2; display: block; margin: 0;">
+                        <div class="rows"id="row2">
+                            <div class="name-row"><span>Shipping:</span></div>
+                            <p class="item-row">Free</p>
+                        </div>
+                        <hr style="color:#A35DFE; opacity: 0.2; display: block; margin: 0;">
+                        <div class="rows"id="row3">
+                            <div class="name-row"><span>Total:</span></div>
+                            <p class="item-row" id="final-total" style="font-weight: bold;">$0.00</p>
+                        </div>
+
+                        <button class="checkout-btn" onclick="comingsoon()">Proceed to checkout</button>
+                    </div>
+                </div>
+
+                <div class="coupon-code">
+                    <p>Coupon Code</p>
+                    <input type="text" id="coupon-code" placeholder="Enter code">
+                    <button type="button" onclick="comingsoon()">Apply Coupon</button>
+                </div>
+                
+                
+                
                 </div>
             </div>
             <footer>

@@ -9,7 +9,6 @@
     <title>PRODUCTS</title>
     <script src="../js/product-store.js"></script>
     
-    
 </head>
 <body>
     <div class="container">
@@ -43,7 +42,16 @@
                                 <button type="submit">Search</button>
                             </div>
                             <div class="icon-call-now">
-                                <div class="call-phone-icon"><img src="../images/shop-cart-icon.png" alt=""></div>
+                                <div><img src="../images/product-icon/heart-white.png" alt=""></div>
+                                <div><img src="../images/product-icon/Devider.png" alt=""></div>
+                                <a href="../html/cart.html" class="cart-shop">
+                                    <img src="../images/product-icon/cart-bag-black.png" alt="">
+                                    <div class="product-cnt"><span id="count-sp">0</span></div>
+                                </a>
+                                <div class="text">
+                                    <p>Shopping cart:</p>
+                                    <p style="font-size: 14px;">$<span class="prices" id="prices">57.00</span></p>
+                                </div>
                             </div>
                             
                         </div>
@@ -136,7 +144,7 @@
             <!-- ĐOẠN THÊM MẤY CÁI ACTIVE FILTER VÔ -->
         </div>
         <hr style="color:#A35DFE; opacity: 0.3; margin-top: 0;"> 
-        <div id="form-container"></div> <!-- LOAD FORM TU CAC SAN PHAM-->
+        <div id="form-page"></div> <!-- LOAD FORM TU CAC SAN PHAM-->
 
 
         <div class="content-wrapper">
@@ -169,7 +177,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -201,7 +209,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -233,7 +241,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="" aria-hidden="true" onclick="loadForm()">
                         </div>
 
-                        <a class="product-cirle-icon" id="product-bottom-icon" href="caichip-page.html">
+                        <a class="product-cirle-icon" id="product-bottom-icon" href="caichip-page.html" onclick="themvaogiohang(this)">
                             <img src="../images/product-icon/Bag.png" alt="">
                         </a>
                        
@@ -266,7 +274,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -298,7 +306,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -330,7 +338,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -362,7 +370,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -394,7 +402,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -426,7 +434,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -458,7 +466,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -490,7 +498,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -522,7 +530,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -554,7 +562,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -586,7 +594,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -618,7 +626,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -627,7 +635,7 @@
                 <!--MỘT SẢN PHẨM-->
                 <div class="product-container">
                     <div class="product-img">
-                        <img src="../images/otchuongdo.jpg" alt="caichip">
+                        <img src="../images/otchuongxanh.jpg" alt="">
                     </div>
                     <div class="product-content">
                         <div class="product-content-name">
@@ -650,7 +658,7 @@
                             <img src="../images/product-icon/Eye-icon.png" alt="">
                         </div>
 
-                        <div class="product-cirle-icon" id="product-bottom-icon">
+                        <div class="product-cirle-icon" id="product-bottom-icon" onclick="themvaogiohang(this)">
                            <img src="../images/product-icon/Bag.png" alt="">
                         </div>
                     </div>
@@ -730,7 +738,7 @@
                             <div><p><b>My Account</b></p><br>
                             <a href=""><p>My Account</p></a><br>
                             <a href=""><p>Order History</p></a><br>
-                            <a href=""><p>Shoping Cart</p></a><br>
+                            <a href="../html/cart.html"><p>Shoping Cart</p></a><br>
                             <a href=""><p>Wishlist</p></a><br>
                             </div>
                         </div>

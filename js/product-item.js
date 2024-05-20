@@ -2,7 +2,7 @@ const valueSpan = document.getElementById('value');
 const decrementBtn = document.getElementById('decrementBtn');
 const incrementBtn = document.getElementById('incrementBtn');
 
-let value = 0;
+let value = parseInt(valueSpan.innerText);
 
 decrementBtn.addEventListener('click', () => {
   if (value > 0) {
@@ -19,5 +19,4 @@ incrementBtn.addEventListener('click', () => {
 function updateValue() {
   valueSpan.textContent = value;
 }
-
 

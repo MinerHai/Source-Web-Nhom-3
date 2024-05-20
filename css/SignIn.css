@@ -1,0 +1,155 @@
+@media only screen and (min-width: 300px) and (max-width: 650px){
+    .content_signin_password{
+       height: 100%;
+       width: 83%;
+       margin-left: 0px;
+    }
+    .input_signin_password{
+        gap:56%;
+    }
+    .eye{
+        padding-top: 2%;
+        padding-right: 100px;
+    }
+    .remember_password_content{
+        justify-content: space-between;
+        gap:0px;
+    }
+    .remember_forget{
+        padding-right: 15px;
+    }
+    .find_sigin p{
+        padding-left: 0%;
+    }
+    
+ }
+
+.content_signin_password{
+    margin:0 auto;
+    border: 0px solid #faf6f6;
+    border-radius: 7px;
+    width: 36%;
+    height: 100%;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px  20px 20px rgba(232, 232, 232, 0.5) ; 
+    margin-top: 81px;  
+    padding-bottom: 3px; 
+}
+
+.input_content_password{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 20px;
+    padding-bottom:0px;
+    text-align: center;
+    background-color: white;
+}
+
+.input_password_content{
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 90px;
+    background-color: white;
+}
+.input_password_content:focus-visible{
+    outline: none;
+}
+/*email*/
+.input_password{
+    border: 1px solid #e5dede;
+    padding:7px 7px;
+    margin-bottom: -12px;
+    width: 90%;
+    height: 28px;
+    display: flex;
+    gap:240px;
+    border-radius: 6px;
+    color:#999999;
+}
+/*----la của passwword-----*/
+.input_signin_password{
+
+    border: 1px solid #e5dede;
+    padding:7px 7px;
+    margin-top: 10px;
+    width: 90%;
+    height: 28px;
+    display: flex;
+    gap:73%;
+    border-radius: 6px;
+}
+
+.remember_password_content{
+   display: flex;
+   gap:37%;
+   
+}
+
+
+    
+  
+
+  input[type="checkbox"] {
+    /*transform: scaleX(2) scaleY(1,96); căn theo chiều ngang 2x avf chieu doc 1x*/
+    width: 19px;
+    height: 19px;
+    
+  }
+
+.remember_password_content label{
+    padding-top:2px;
+    height:4px;
+    weight:4px;
+}
+.remember_password_sigin{
+    display: flex;
+    gap:100px;
+    padding:10px 20px;
+    background-color: white;
+}
+.remember_forgot{
+    padding-left: 20px;
+    display:flex;
+    align-items: center;/*căn chiều dọc theo trục chính giữa */
+    gap:2px;
+    
+}
+.button_sigin_content{
+    border: 1px solid #a8a7a7;
+    background-color: #00B207;
+    border-radius: 40px;
+    width: 85%;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 34px;
+    text-align:center;
+    color: white;
+    margin-left: 30px;
+    
+}
+.button_sigin_content:hover{
+    cursor: pointer;
+    background-color: #a8a7a7;
+}
+
+.find_sigin{
+
+    display: flex;
+    font-size:14px;
+    padding-left: 20px;
+    text-align: center;
+    gap:2px;
+    margin-bottom: 10px;
+    
+}
+.find_sigin a{
+    color: #121111;
+    text-decoration: none;
+
+    
+}
+#eye img {
+   cursor: pointer;
+}

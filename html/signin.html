@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/template.css">
         <link rel="stylesheet" href="../css/footer.css">
-        <title>TEMPLATE</title>
-        <script src="../js/product-store.js"></script>
+        <link rel="stylesheet" href="../css/SignIn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>SingIn</title>
     </head>
     <body>
-        <div class="container">
-            <header>
+        
+        <header>
                 <div class="nav">
                     <!-- SMALL ONE -->
                     <div class="content-wrapper" style="padding-top: 1%;">
@@ -40,16 +43,7 @@
                                     <button type="submit">Search</button>
                                 </div>
                                 <div class="icon-call-now">
-                                    <div><img src="../images/product-icon/heart-white.png" alt=""></div>
-                                    <div><img src="../images/product-icon/Devider.png" alt=""></div>
-                                    <a href="../html/cart.html" class="cart-shop">
-                                        <img src="../images/product-icon/cart-bag-black.png" alt="">
-                                        <div class="product-cnt"><span id="count-sp">0</span></div>
-                                    </a>
-                                    <div class="text">
-                                        <p>Shopping cart:</p>
-                                        <p style="font-size: 14px;">$<span class="prices" id="prices">57.00</span></p>
-                                    </div>
+                                    <div class="call-phone-icon"><img src="../images/shop-cart-icon.png" alt=""></div>
                                 </div>
                                 
                             </div>
@@ -89,45 +83,71 @@
                         </div>
                     </div>
                 </div>
-            </header>
-            
-            <div class="content-wrapper">
-                <div class="content">
-                <!-- Nội dung của trang web -->
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
-                    <h2>Main Content</h2>
+         </header>
+            <!-- body -->
+            <div class="containner">
+                <div class="content_signin_password">
+                    <div class="input_content_password">
+                        <h1 style="font-size:30px ;font-family: poppins;font-weight: 700;padding-top: 10px">Sign In</h1>
+                        <input style="font-size: 14px; background-color: white ;height:30px;font-family: poppins;font-weight: 400" type="text" placeholder="Email"
+                            class="input_password"> 
+                        <div class="input_signin_password">
+                            <input style="font-size: 14px; background-color: white; height:30px;font-family: poppins;font-weight: 400" type="password"
+                                placeholder="Password" class="input_password_content">
+                            <div class="eyes"   id="eye">
+                                <img src="../images/mat_login.svg" alt="" class="toggle-password">
+                            </div>
+                               </div>
                         
-                    <!-- Các phần khác -->
-                </div>
-            </div>
+                    </div>
+        
+                    <div class="remember_password_signin">
+                        <div class="remember_password_content">
+                             <div class="remember_forgot">
+                                <lable><input  type="checkbox"></lable>
+                                <p style="font-family: Poppins;color: #666666; font-size:16px;font-family: poppins;font-weight: 400">Remember me</p> 
+                            </div>
+                            <div class="remember_forget">
+                                <p style="font-family: Poppins;color:  #666666 ;font-size:16px;font-family: poppins;font-weight: 400">Forget password</p> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="button_sigin_content">
+                        Login
+                    </div>
+
+                    <div class="find_sigin">
+                        <p style="font-size:16px; ;color: #666666 ;padding-left: 110px;font-family: poppins;font-weight: 400">Don't have an account ? </p>
+                        <a href="#" style="padding-top: 15px;font-size: 16px;font-family: poppins;font-weight: 600"> Register</a>
+                    </div>
+                 </div>        
+            </div>  
+            
+
+
+           
+
+
+            
+  
+
+
+                
+
+                    
+        </div>  
+        <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+        <script src="../js/sigin.js"></script>
+                    
+    
+    
+    
+    
+    
+    
+            
             <footer>
                 <div class="footer-search">
                     <div class="big-sub">
@@ -142,19 +162,18 @@
                                     <input type="submit" value="subcribse" class="btnsub">
                                 </div>
                                 <div class="sub-icon">
-                                    <div class="the-icon">
-                                        <a href="#"><img src="../images/social-icon/facebook.png" alt=""></a>
+                                    <div>
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
                                     </div>
-                                    <div class="the-icon">
-                                        <a href="#"><img src="../images/social-icon/twitter.png" alt=""></a>
+                                    <div>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                                     </div>
-                                    <div class="the-icon">
-                                        <a href="#"><img src="../images/social-icon/printest.png" alt=""></a>
+                                    <div>
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                                     </div>
-                                    <div class="the-icon">
-                                        <a href="#"><img src="../images/social-icon/instagram-1.png" alt=""></a>
+                                    <div>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -214,10 +233,10 @@
                     <div class="under-footer">
                         <div class="under-footer-content"><p style="color: gray;">Ecobazar eCommerce © 2021. All Rights Reserved</p></div>
                         <div class="under-icon">
-                            <div><img src="../images/Method=ApplePay (1).png" alt=""></div>
-                            <div><img src="../images/Method=Visa (1).png" alt=""></div>
-                            <div><img src="../images/Method=Discover (1).png" alt=""></div>
-                            <div><img src="../images/Cart (2).png" alt=""></div>
+                            <div><i class="fa-brands fa-apple-pay "></i></div>
+                            <div><i class="fa-brands fa-cc-visa"></i></div>
+                            <div><i class="fa-brands fa-cc-discover" ></i></div>
+                            <div><i class="fa-brands fa-cc-mastercard"></i></div>
                         </div>
                     </div>
                 </div>

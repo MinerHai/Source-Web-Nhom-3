@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="../css/product-items/caichip-page.css">
         <link rel="stylesheet" href="../css/products-style.css">
         <title>CẢI CHÍP</title>
+        <script src="../js/product-store.js"></script>
     </head>
-    <script src="../js/product-store.js"></script>
+    
+    
     <body>
         <div class="container">
             <header>
@@ -42,7 +44,16 @@
                                     <button type="submit">Search</button>
                                 </div>
                                 <div class="icon-call-now">
-                                    <div class="call-phone-icon"><img src="../images/shop-cart-icon.png" alt=""></div>
+                                    <div><img src="../images/product-icon/heart-white.png" alt=""></div>
+                                    <div><img src="../images/product-icon/Devider.png" alt=""></div>
+                                    <a href="../html/cart.html" class="cart-shop">
+                                        <img src="../images/product-icon/cart-bag-black.png" alt="">
+                                        <div class="product-cnt"><span id="count-sp">0</span></div>
+                                    </a>
+                                    <div class="text">
+                                        <p>Shopping cart:</p>
+                                        <p style="font-size: 14px;">$<span class="prices" id="prices">57.00</span></p>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -88,16 +99,25 @@
                 <div class="content">
                     <div class="product-detail">
                         <div class="quick-view-img">
-                            <div><img src="../../images/product-icon/arrow-up.png" alt=""></div>
-                            <img src="../../images/caichip.jpg" alt="">
-                            <img src="../../images/rau-1.jpg" alt="">
-                            <img src="../../images/rau2.jpg" alt="">
-                            <img src="../../images/rau-4.jpg" alt="">
-                            <div><img src="../../images/product-icon/arrow-down.png" alt=""></div>
+                            <div><img src="../images/product-icon/arrow-up.png" alt=""></div>
+                            <button class="btn-img" onclick="showForm('form1','','big-img-product')"><img src="../images/caichip.jpg" alt=""></button>
+                            <button class="btn-img" onclick="showForm('form2','','big-img-product')"><img src="../images/rau-1.jpg" alt=""></button>
+                            <button class="btn-img" onclick="showForm('form3','','big-img-product')"><img src="../images/rau2.jpg" alt=""></button>
+                            <button class="btn-img" onclick="showForm('form4','','big-img-product')"><img src="../images/rau-4.jpg" alt=""></button>
+                            <div><img src="../images/product-icon/arrow-down.png" alt=""></div>
                         </div>
                 
-                        <div class="big-img-product">
-                            <img src="../../images/caichip.jpg" alt="">
+                        <div class="big-img-product" id="form1" style="display: block;">
+                            <img src="../images/caichip.jpg" alt="">
+                        </div>
+                        <div class="big-img-product" id="form2">
+                            <img src="../images/rau-1.jpg" alt="">
+                        </div>
+                        <div class="big-img-product" id="form3">
+                            <img src="../images/rau2.jpg" alt="">
+                        </div>
+                        <div class="big-img-product" id="form4">
+                            <img src="../images/rau-4.jpg" alt="">
                         </div>
                         <div class="form-content">
                             <div class="form-content-header">
@@ -111,7 +131,7 @@
                 
                             <div class="form-content-rate-bar">
                                 <div class="rate-icon">
-                                    <img src="../../images/product-icon/Rating.png" alt="">
+                                    <img src="../images/product-icon/Rating.png" alt="">
                                 </div>
                                 <div class="review-count">
                                     <p>4 Review </p>
@@ -130,13 +150,13 @@
                             <div class="info-item">
                                 <div class="brand-bar">
                                     <div>Brand:</div>
-                                    <div class="brand-img"><img src="../../images/brand-caichip.PNG" alt=""></div>
+                                    <div class="brand-img"><img src="../images/brand-caichip.PNG" alt=""></div>
                                     <div class="share-item">
                                         <div class="share-item-text">Share item:</div>
-                                        <div class="share-item-icon"><img src="../../images/social-icon/facebook.png" alt=""></div>
-                                        <div class="share-item-icon"><img src="../../images/social-icon/twitter.png" alt=""></div>
-                                        <div class="share-item-icon"><img src="../../images/social-icon/printest.png" alt=""></div>
-                                        <div class="share-item-icon"><img src="../../images/social-icon/instagram.png" alt=""></div>
+                                        <div class="share-item-icon"><img src="../images/social-icon/facebook.png" alt=""></div>
+                                        <div class="share-item-icon"><img src="../images/social-icon/twitter.png" alt=""></div>
+                                        <div class="share-item-icon"><img src="../images/social-icon/printest.png" alt=""></div>
+                                        <div class="share-item-icon"><img src="../images/social-icon/instagram.png" alt=""></div>
                                     </div>
                                 </div>
                                 <div class="info-item-desc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </div>
@@ -144,16 +164,16 @@
                         <hr style="color:#A35DFE; opacity: 0.3;"> 
                         <div class="add-to-cart">
                             <div class="add-down-btn">
-                                <button id="decrementBtn" class="btn"><img src="../../images/product-icon/Minus.png" alt=""></button>
+                                <button id="decrementBtn" class="btn"><img src="../images/product-icon/Minus.png" alt=""></button>
                                 <p id="value">0</p>
-                                <button id="incrementBtn" class="btn"><img src="../../images/product-icon/Plus.png" alt=""></button>
-                                <script src="../../js/product-item.js"></script>
+                                <button id="incrementBtn" class="btn"><img src="../images/product-icon/Plus.png" alt=""></button>
+                                <script src="  ../js/product-item.js"></script>
                               </div>
                             <button class="button-add-to-cart">
                                 <div>Add to Cart</div>
-                                <div class="center-img"><img src="../../images/product-icon/cart-bag-white.png" alt=""></div>
+                                <div class="center-img"><img src="../images/product-icon/cart-bag-white.png" alt=""></div>
                             </button>
-                            <div class="fav-icon"><img src="../../images/product-icon/Heart-Green.png" alt=""></div>
+                            <div class="fav-icon"><img src="../images/product-icon/Heart-Green.png" alt=""></div>
                         </div>
                         <hr style="color:#A35DFE; opacity: 0.3;"> 
                 
@@ -185,9 +205,9 @@
             <div class="content-wrapper">
                 <div class="content">
                     <div class="product-nav">
-                        <button id="button1" class="form-button active-button" onclick="showForm('desc', 'button1')">Descriptions <hr class="cus"></button>
-                        <button id="button2" class="form-button" onclick="showForm('form2', 'button2')">Additional Information <hr class="cus"></button>
-                        <button id="button3" class="form-button" onclick="showForm('form3', 'button3')">Customer Feedback <hr class="cus"></button>
+                        <button id="button1" class="form-button active-button" onclick="showForm('desc', 'button1','form-container')">Descriptions <hr class="cus"></button>
+                        <button id="button2" class="form-button" onclick="showForm('additional', 'button2','form-container')">Additional Information <hr class="cus"></button>
+                        <button id="button3" class="form-button" onclick="showForm('feedback', 'button3','form-container')">Customer Feedback <hr class="cus"></button>
                     </div>
                 </div>
                 </div>
@@ -253,7 +273,7 @@
                 </div>
 
                 <!-- Nội dung của Form 2 -->
-                <div id="form2" class="form-container">
+                <div id="additional" class="form-container">
                     <div style="display: flex;">
                         <div class="left-content">
                             <div class="desc-bar">
@@ -316,7 +336,7 @@
                 </div>
                 
                  <!-- Nội dung của Form 3 -->
-                <div id="form3" class="form-container">
+                <div id="feedback" class="form-container">
                     <div class="review-bar">
                         <div class="info-bar">
                            <div class="user-avatar the-icon">
