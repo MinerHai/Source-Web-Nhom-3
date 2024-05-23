@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/blog.js"></script>
+    <script src="../js/singleblog.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav">
+                <!-- SMALL ONE -->
+                <div class="content-wrapper" style="padding-top: 1%;">
+                    <div class="contact">
+                        <i class="fas fa-map-marker-alt" style="color: #666666;"></i>
+                        <div class="contact-text"> Store Location: Lincoln- 344, Illinois, Chicago, USA</div> 
+                    </div>
+
+                    <!-- LOGIN-SIGN-LINK -->
+                    <div class="nav-log-sign">
+                        <div style="margin-right:10px;"><img src="../images/ENG.png" alt="ENG"></div>
+                        <div style="margin-right:20px;"><img src="../images/USD.png" alt="USD"></div>
+                        |
+                        <a href="#">Sign In </a>
+                        /
+                        <a href="#">Sign Up </a>
+                    </div>
+                    
+                </div>
+                <!-- MIDLE -->
+                <hr style="color:#A35DFE; opacity: 0.3;"> 
+                <div class="content-wrapper" style="margin-top: 15px;">
+                        <div class="middle">
+                            <div id="logo"><a href="template.html"><img src="../images/LogoLogo.png" alt="" style="max-width: 100%;  height: auto;"></a></div>
+
+                            <div id="search-bar">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit">Search</button>
+                            </div>
+                            <div class="icon-call-now">
+                                <div class="call-phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="icon-call-now-content">
+                                    <div id="icon-call-now-text1">Customer Services</div>
+                                    <div id="icon-call-now-text2">(219) 555-0114</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </div>
+                <!--LINK-->
+                <div class="nav-link-bar">
+                    <div class="custom-select">
+                        <div class="select-selected">
+                            <div class="select-menu-icon"><i class="fa-solid fa-bars"></i></div>All Categories
+                        </div>
+                        <div class="select-items">
+                            <div><a href=""><i class="fa-solid fa-apple-whole" id="select-menu-item"></i>Fresh Fruit</a></div>
+                            <div><a href="products.html"><i class="fa-regular fa-lemon" id="select-menu-item"></i>Vegetables</a></div>
+                            <div><a href=""><i class="fa-solid fa-fish-fins" id="select-menu-item"></i>River Fish</a></div>
+                            <div><a href=""><i class="fa-solid fa-bacon" id="select-menu-item"></i>Chicken & Meat</a></div>
+                            <div><a href=""><i class="fa-solid fa-wine-bottle" id="select-menu-item"></i>Drink & Water</a></div>
+                            <div><a href=""><i class="fa-solid fa-ice-cream" id="select-menu-item"></i>Cake & Bread</a></div>
+                            <div><a href=""><i class="fa-solid fa-bread-slice" id="select-menu-item"></i>Butter & Cream</a></div>
+                            <div><a href=""><i class="fa-solid fa-utensils" id="select-menu-item"></i>Cooking</a></div>
+                            <div><a href=""><i class="fa-solid fa-plus" id="select-menu-item"></i>View all Categories</a></div>
+                        </div>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#">Home</a>
+                        <a href="#">Shop </a>
+                        <a href="#">Pages </a>
+                        <a href="#">Blog </a>
+                        <a href="#">About Us </a>
+                        <a href="#">Contact Us </a>
+                        <div class="nav-link-account">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content-wrapper">
+            <div class="content">
+                <!-- Nội dung của trang web -->
+                <div class="container-blog">
+                    <div class="sidebar">
+                        <div id="search-bar">
+                            <div style="display: flex;">
+                            <input type="text" id="search-input" placeholder="Search...">
+                            <button type="submit" onclick="searchPosts()">Search</button>
+                            </div>
+                            <div id="search-results" class="search-results"></div>
+                        </div>
+                        <div class="category">
+                            <h3>Top Categories</h3>
+                            <ul>
+                                <div class="search-blog">
+                                    <li><a href="#">Fresh Fruit</a></li>
+                                    <p>(134)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Vegetables</a></li>
+                                    <p>(150)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Cooking</a></li>
+                                    <p>(54)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Snacks</a></li>
+                                    <p>(47)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Beverages</a></li>
+                                    <p>(43)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Beauty & Health</a></li>
+                                    <p>(38)</p>
+                                </div>
+                                <div class="search-blog">
+                                    <li><a href="#">Bread & Bakery</a></li>
+                                    <p>(15)</p>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <h3>Popular Tags</h3>
+                            <div class="tag">
+                                <div class="tag-box"><p>Healthy</p></div>
+                                <div class="tag-box"><p>Low fat</p></div>
+                                <div class="tag-box"><p>Vegetarian</p></div>
+                                <div class="tag-box"><p>Bread</p></div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag-box"><p>Kid foods</p></div>
+                                <div class="tag-box"><p>Vitamins</p></div>
+                                <div class="tag-box"><p>Snacks</p></div>
+                                <div class="tag-box"><p>Tiffin</p></div>
+                            </div>
+                            <div class="tag">
+                                <div class="tag-box"><p>Meat</p></div>
+                                <div class="tag-box"><p>Launch</p></div>
+                                <div class="tag-box"><p>Dinner</p></div> 
+                            </div>
+                        </div>
+                        <div class="gallery">
+                            <h3>Our Gallery</h3>
+                            <img src="../images/bloglistimg/gallery.png" alt="Gallery Image 1">
+                            <img src="../images/bloglistimg/gallery (1).png" alt="Gallery Image 2">
+                            <img src="../images/bloglistimg/gallery (2).png" alt="Gallery Image 3">
+                            <img src="../images/bloglistimg/gallery (3).png" alt="Gallery Image 3">
+                            <img src="../images/bloglistimg/gallery (4).png" alt="Gallery Image 3">
+                            <img src="../images/bloglistimg/gallery (6).png" alt="Gallery Image 3">
+                            <img src="../images/bloglistimg/gallery (7).png" alt="Gallery Image 3">
+                            <img src="../images/bloglistimg/gallery (8).png" alt="Gallery Image 3">
+                        </div>
+                        <div class="recently-added">
+                            <h3>Recently Added</h3>
+                            <div class="big-recently">
+                            <div class="Recently1">
+                                <div class="Recently-img"><img src="../images/bloglistimg/Image (28).png" alt=""></div>
+                                <div class="Recently-title">
+                                    <div>
+                                        <h3>Curabitur porttitor orci eget nequ accumsan.</h3>
+                                    </div>
+                                    <div class="Recently-small-title">
+                                        <div class="smallbag">
+                                            <div><img src="../images/bloglistimg/smallbag.png" alt=""></div>
+                                            <div><p style="color: rgb(179, 179, 179);">Apr 25, 2021</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Recently1">
+                                <div class="Recently-img"><img src="../images/bloglistimg/Image (29).png" alt=""></div>
+                                <div class="Recently-title">
+                                    <div>
+                                        <h3>Donec mattis arcu faucibus suscipit viverra.</h3>
+                                    </div>
+                                    <div class="Recently-small-title">
+                                        <div class="smallbag">
+                                            <div><img src="../images/bloglistimg/smallbag.png" alt=""></div>
+                                            <div><p style="color: rgb(179, 179, 179);">Apr 25, 2021</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Recently1">
+                                <div class="Recently-img"><img src="../images/bloglistimg/Image (30).png" alt=""></div>
+                                <div class="Recently-title">
+                                    <div>
+                                        <h3>Quisque posuere tempus rutrum. Integer velit ex.</h3>
+                                    </div>
+                                    <div class="Recently-small-title">
+                                        <div class="smallbag">
+                                            <div><img src="../images/bloglistimg/smallbag.png" alt=""></div>
+                                            <div><p style="color: rgb(179, 179, 179);">Apr 25, 2021</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="main-content">
+                        <div class="toolbar">
+                            <div class="results">62 Results Found</div>
+                            <div class="sort">
+                                Sort by:
+                                <select>
+                                    <option value="date">Date</option>
+                                    <option value="popularity">Popularity</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (18).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (19).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (20).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (21).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (22).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (23).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (24).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (25).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (26).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="../images/bloglistimg/Image (27).png" alt="Post Image">
+                            <div class="date">18 Nov</div>
+                            <div class="content-blog">
+                                <div class="meta">
+                                    <span class="category">Food</span> •
+                                    <span class="author">By Admin</span> •
+                                    <span class="comments">13 Comments</span>
+                                </div>
+                                <h2 class="title-blog">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</h2>
+                                <a href="./singleblog.html" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more card elements as needed -->
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Các phần khác -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-search">
+                <div class="big-sub">
+                    <div class="sub">
+                        <div class="sub-title">
+                            <div><h1 style="font-weight: bold;">Subcribe our Newsletter</h1></div>
+                            <div><p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna</p></div>
+                        </div>
+
+                        <div class="sub-button">
+                            <div class="btn-sub">
+                                <input type="text" class="input" placeholder="Your email address">
+                                <input type="submit" value="subcribse" class="btnsub">
+                            </div>
+                            <div class="sub-icon">
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="big-footer">
+                <div class="footer">
+                    <div class="foooter-nav1">
+                        <div class="footer-title">
+                            <div class="icon-footer"><img src="../images/Group (3).png" alt=""></div>
+                            <div class="title-footer"><h1 style="font-weight: bold;">Ecobazar</h1></div>
+                        </div>
+                        <div class="content-footer"><p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p></div>
+                        <div class="footer-phone">
+                            <div><p>(219) 555-0114</p></div>
+                            <div><p style="color: #999999;">or</p></div>
+                            <div><p>Proxy@gmail.com</p></div>
+                        </div>
+                    </div>
+                    <div class="footer-nav21">
+                        <div class="footer-nav2">
+                            <div><p><b>My Account</b></p><br>
+                            <a href=""><p>My Account</p></a><br>
+                            <a href=""><p>Order History</p></a><br>
+                            <a href=""><p>Shoping Cart</p></a><br>
+                            <a href=""><p>Wishlist</p></a><br>
+                            </div>
+                        </div>
+                        <div class="footer-nav2">
+                            <div><p><b>Helps</b></p><br>
+                            <a href=""><p>Contacts</p></a><br>
+                            <a href=""><p>Faqs</p></a><br>
+                            <a href=""><p>Terms & Condition</p></a><br>
+                            <a href=""><p>Privacy Policy</p></a><br>
+                            </div>
+                        </div>
+                        <div class="footer-nav2">
+                            <div><p><b>Proxy</b></p><br>
+                            <a href=""><p>About</p></a><br>
+                            <a href=""><p>Shop</p></a><br>
+                            <a href=""><p>Product</p></a><br>
+                            <a href=""><p>Track Order</p></a><br>
+                            </div>
+                        </div>
+                        <div class="footer-nav2">
+                            <div><p><b>Categories</b></p><br>
+                            <a href=""><p>Fruits & Vegetables</p></a><br>
+                            <a href=""><p>Meat & Fish</p></a><br>
+                            <a href=""><p>Bread & Bakery</p></a><br>
+                            <a href=""><p>Beauty & Health</p></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="color:#A35DFE; opacity: 0.3;"> 
+                <div class="under-footer">
+                    <div class="under-footer-content"><p style="color: gray;">Ecobazar eCommerce © 2021. All Rights Reserved</p></div>
+                    <div class="under-icon">
+                        <div><i class="fa-brands fa-apple-pay "></i></div>
+                        <div><i class="fa-brands fa-cc-visa"></i></div>
+                        <div><i class="fa-brands fa-cc-discover" ></i></div>
+                        <div><i class="fa-brands fa-cc-mastercard"></i></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>
