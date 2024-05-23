@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title>SingIn</title>
+        <title>LogIN</title>
     </head>
     <body>
         
@@ -26,9 +26,9 @@
                         <div class="nav-log-sign">
                             <div style="margin-right:10px;"><img src="../images/ENG.png" alt="ENG"></div>
                             <div style="margin-right:20px;"><img src="../images/USD.png" alt="USD"></div>
-                            |
-                            <a href="#">Sign In </a>
-                            /
+                            
+                            <a href="../html/signin.html">Sign In </a>
+                            
                             <a href="#">Sign Up </a>
                         </div>
                         
@@ -72,11 +72,11 @@
                         </div>
                         <div class="nav-link">
                             <a href="#">Home</a>
-                            <a href="#">Shop </a>
+                            <a href="../html/products.html">Shop </a>
                             <a href="#">Pages </a>
                             <a href="#">Blog </a>
                             <a href="../html/about-page.html">About Us </a>
-                            <a href="#">Contact Us </a>
+                            <a href="../html/contact.html">Contact Us </a>
                             <div class="nav-link-account">
                                 <img src="../images/Call-Now.png" alt="">
                             </div>
@@ -85,69 +85,44 @@
                 </div>
          </header>
             <!-- body -->
-            <div class="containner">
-                <div class="content_signin_password">
-                    <div class="input_content_password">
-                        <h1 style="font-size:30px ;font-family: poppins;font-weight: 700;padding-top: 10px">Sign In</h1>
-                        <input style="font-size: 14px; background-color: white ;height:30px;font-family: poppins;font-weight: 400" type="text" placeholder="Email"
-                            class="input_password"> 
-                        <div class="input_signin_password">
-                            <input style="font-size: 14px; background-color: white; height:30px;font-family: poppins;font-weight: 400" type="password"
-                                placeholder="Password" class="input_password_content">
-                            <div class="eyes"   id="eye">
-                                <img src="../images/mat_login.svg" alt="" class="toggle-password">
-                            </div>
-                               </div>
-                        
-                    </div>
-        
-                    <div class="remember_password_signin">
-                        <div class="remember_password_content">
-                             <div class="remember_forgot">
-                                <lable><input  type="checkbox"></lable>
-                                <p style="font-family: Poppins;color: #666666; font-size:16px;font-family: poppins;font-weight: 400">Remember me</p> 
-                            </div>
-                            <div class="remember_forget">
-                                <p style="font-family: Poppins;color:  #666666 ;font-size:16px;font-family: poppins;font-weight: 400">Forget password</p> 
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="button_sigin_content">
-                        Login
-                    </div>
-
-                    <div class="find_sigin">
-                        <p style="font-size:16px; ;color: #666666 ;padding-left: 110px;font-family: poppins;font-weight: 400">Don't have an account ? </p>
-                        <a href="#" style="padding-top: 15px;font-size: 16px;font-family: poppins;font-weight: 600"> Register</a>
-                    </div>
-                 </div>        
-            </div>  
             
 
-
-           
-
-
+        <div class="content">
+        <div class="content_password_login">
+            <div class="input_content_password">
+                <h1 style="text-align: center;">Create Account</h1>
+                <input style="font-size: 14px; font-family: poppins;font-weight: 400;background-color: white" type="text" placeholder="Email"
+                    class="input_login_password" id="email_regis">
+                <div class="input_login_password">
+                    <input style="font-size: 14px; font-family: poppins;font-weight: 400;background-color: white" type="password"
+                        placeholder="Password" class="input_password_content" id="password_regis">
+                    <img src="../images/mat_login.svg" alt="" id = 'toggle_password'>
+                </div>
+                <div class="input_login_password">
+                    <input style="font-size: 14px; background-color: white;font-family: poppins;font-weight: 400;" type="password"
+                        placeholder="Confrim password" class="input_password_content" id="confirm_password_regis">
+                    <img src="../images/mat_login.svg" alt="" id="toggle_confirm_password">
+                </div>
+            </div>
+            <div class="alert_register_email" id="alert_register_email">Kiểm tra lại format email</div>
+            <div class="alert_register_pass" id="alert_register_pass">Kiểm tra lại mật khẩu</div>
+            <div class="alert_register_pass_lenght" id="alert_register_pass_lenght">Độ dài mật khẩu phải lớn hơn 8</div>
+            <div class="remember_password_login">
+                <lable><input  type="checkbox" ; style="width:50px"></lable>
+                <p style="font-family: poppins;font-weight: 400;font-size: 15px;color: #666666;">Accept all terms & Conditions</p>
+            </div>
             
-  
+            <div class="button_login_content" id="btn_regis">
+                  <div class="create_login">Create Account</div>
+            </div>
+            <div style="display: flex;">
+                <p style="font-size:16px; ;color: #666666 ;padding-left: 110px;font-family: poppins;font-weight: 400">Already have account  </p>
+                <a href="#" style="padding-top: 15px;font-size: 16px;font-family: poppins;font-weight: 600" id="btn_login_regis"> Login</a>
+            </div>
+        </div>
+    </div>
 
-
-                
-
-                    
-        </div>  
-        <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
-        <script src="../js/sigin.js"></script>
-                    
-    
-    
-    
-    
-    
-    
-            
+    <script src="../js/sigin.js"></script>
             <footer>
                 <div class="footer-search">
                     <div class="big-sub">
@@ -202,7 +177,7 @@
                                 <a href=""><p>Shoping Cart</p></a><br>
                                 <a href=""><p>Wishlist</p></a><br>
                                 </div>
-                            </div>
+                            </div>  
                             <div class="footer-nav2">
                                 <div><p><b>Helps</b></p><br>
                                 <a href=""><p>Contacts</p></a><br>

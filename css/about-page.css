@@ -301,6 +301,10 @@
         .banner_three_about_conttent{
             .button_about{
                 width: 100%;
+                
+                .button_text{
+                    
+                }
             }
             .tick_about .tick{
                 .icon_tick{
