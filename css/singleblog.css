@@ -1,6 +1,19 @@
 .single-tag {
     display: flex;
 }
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    height: 50%;
+   
+   
+   
+}
 
 .tag1 {
     display: flex;
@@ -16,7 +29,7 @@
     display: block;   /* Removes bottom spacing in some browsers */
 }
 .singleblog-title{
-    width: 70%;
+    width: 60%;
     margin-right: 2%;
 }
 .big-content-single{
@@ -82,6 +95,7 @@ label {
 textarea {
     width: calc(100% - 10px);
     padding: 10px;
+    
     border: 2px solid #505250 ;
     border-radius: 5px;
     margin: 0 0 10px;
@@ -145,4 +159,26 @@ textarea {
     .big-content-single{
         flex-direction: column;
     }
+    .login-single{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1600px){
+.sidebar{
+    width: 50%;
+}
+}
+.login-single{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.form-group3{
+    display: flex;
+}
+.form-group1{
+    width: 40%;
+}
+.form-group2{
+    width: 40%;
 }

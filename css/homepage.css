@@ -493,13 +493,13 @@
     margin-right: 10px;
 }
 .boxdeal1{
-    width: 30%;
+    width: 25.8%;
+    height: 20%;
     border: 1px solid gray;
     float: left;
-    padding-bottom: -20px;
-    padding-top: -20px;
-    padding-right: 4%;
-    padding-left: 4%;
+ 
+    padding-right: 6%;
+    padding-left: 6%;
     
     
 }
