@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-between; /* Khoảng cách đều giữa các ảnh */
     flex-wrap: wrap; /* Cho phép ảnh gập lại nếu cần */
-    gap: 5px; /* Khoảng cách giữa các ảnh */
+    
     text-align: center; /* Căn giữa tiêu đề */
 }
 
@@ -112,23 +112,37 @@
 .search-blog li{
     
 }
-.tag{
+.tags {
+    margin: 20px;
+}
+.tag {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.tags{
-    width: 20%;
-}
-.tag-box{
-
-    border-radius: 10px;
-    background-color: rgb(189, 189, 189);
-    padding: 2px 5px; /* Giảm padding để thu nhỏ chiều cao */
-    margin: auto;
-    text-align: center;
+.tag-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 calc(25% - 20px); /* Adjust the percentage and margin to fit your layout */
     box-sizing: border-box;
-    line-height: 1;
-    
+    text-align: center;
+    margin-bottom: 5px;
+}
+.tag-box p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .tag-box {
+        flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tag-box {
+        flex: 1 1 100%; /* One column on small screens */
+    }
 }
 .tag-box:hover{
     color: white;
@@ -163,6 +177,20 @@
     font-weight: bold;
     bottom: 40%;
     left: 10px;
+}
+@media (max-width: 1600px){
+    .date{
+        position: absolute;
+        background-color: #fff;
+        color: #333;
+        padding: 15px 5px;
+        border-radius: 4px;
+        height: 20px;
+        margin: 10px;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+    }
 }
 
 .content-blog {
