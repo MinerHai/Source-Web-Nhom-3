@@ -2,19 +2,33 @@
     display: flex;
 }
 .sidebar {
-    width: 30%;
-    padding: 20px;
+    width: 35%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-right: 20px;
     box-sizing: border-box;
     height: 50%;
-   
-   
-   
 }
-
+.single-blog-content{
+    h3{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        
+        color:#1A1A1A;
+    }
+    p{
+        color: #808080;
+    }
+}
+.title-comment{
+    color: black;
+}
+.input-single{
+    border-style: solid;
+    border-color: red;
+}
 .tag1 {
     display: flex;
     align-items: center; /* Aligns items vertically centered */
@@ -30,7 +44,6 @@
 }
 .singleblog-title{
     width: 60%;
-    margin-right: 2%;
 }
 .big-content-single{
     display: flex;
@@ -96,13 +109,13 @@ textarea {
     width: calc(100% - 10px);
     padding: 10px;
     
-    border: 2px solid #505250 ;
+    border: 2px solid #E6E6E6 ;
     border-radius: 5px;
     margin: 0 0 10px;
 }
 
 .input-single[type="email"] {
-    border: 2px solid #505250;
+    border: 2px solid #E6E6E6;
 }
 
 textarea {
@@ -120,37 +133,68 @@ textarea {
     background-color: rgb(0, 179, 6);
     border: none;
     border-radius: 25px;
-    color: black;
+    color: white;
     font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
 }
 
 .button-single:hover {
     background-color: #00cc00;
+    color: white;
 }
 .content-img{
     display: flex;
     gap: 20px;
 }
 .comment1{
+    b{
+        color: black;
+        margin-right: 5px;
+    }
     display: flex;
-    
+    margin-bottom: 1%;
+    p{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: gray;
+    }
 }
 .date-comment{
     display: flex;
 }
 .content-comment{
     margin-left: 20px;
+    p{
+        margin: 0;
+    }
 }
 .button-comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: white;
     padding: 15px;
-    color: #00cc00;
-    border: solid 1px #00cc00;
+    color: #00B207;
+    border: solid 3px #00B207;
     border-radius: 25px;
     margin-bottom: 30px;
+
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 16.8px;
+    text-align: left;
+
 }
 .button-comment:hover{
-    border: solid 2px green;
+    border: solid 4px green;
 }
 @media (max-width: 680px){
     .singleblog-icon{
