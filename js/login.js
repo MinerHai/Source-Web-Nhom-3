@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(passwordField.value === '123456789' && email.value ==='phamthithuylinh1912@gmail.com'){
         alertLogin.style.display = 'none'
         alertLoginEmail.style.display = 'none';
-        window.location.href = 'products.html';
+        window.location.href = 'homepage.html';
     }
     else{
         alertLoginEmail.style.display = 'none';

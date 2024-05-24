@@ -5,8 +5,7 @@
 }
 
 .sidebar {
-    width: 30%;
-    padding: 20px;
+    width: 35%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -86,7 +85,6 @@
     width: 60%;
     box-sizing: border-box;
     justify-content: center;
-    margin: auto;
 }
 
 .toolbar {
@@ -106,12 +104,22 @@
 .search-blog{
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
+    li{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+   p{
+        color: #808080;
+        font-family: Poppins;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 15px;
+   }
    
 }
-.search-blog li{
-    
-}
+
 .tags {
     margin: 20px;
 }
@@ -121,13 +129,17 @@
     gap: 10px;
 }
 .tag-box {
+    display: inline-block;
     background-color: #f0f0f0;
     padding: 10px;
-    border-radius: 5px;
-    flex: 1 1 calc(25% - 20px); /* Adjust the percentage and margin to fit your layout */
+    border-radius: 15px;
     box-sizing: border-box;
     text-align: center;
     margin-bottom: 5px;
+    float: left;
+    p{
+        font-size: 14px;
+    }
 }
 .tag-box p {
     margin: 0;
@@ -253,14 +265,29 @@
 }
 
 .Recently1{
+    gap:1%;
+    justify-content: center;
     display: flex;
     align-items: center;
+    p,h3{
+        margin:0;
+    }
+    h3{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+    
 }
 .smallbag{
     display: flex;
     align-items: center;
     margin: auto;
-   padding-top: -30px;
+    div{
+        margin: 0   ;
+    }
 }
 #search-bar {
     

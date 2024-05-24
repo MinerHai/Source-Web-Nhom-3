@@ -9,8 +9,10 @@
     <script src='main.js'></script>
     <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/template.css">
     <script src="../js/blog.js"></script>
     <script src="../js/singleblog.js"></script>
+    <script src="../js/product-store.js"></script>
 </head>
 <body>
     <div class="container">
@@ -19,7 +21,7 @@
                 <!-- SMALL ONE -->
                 <div class="content-wrapper" style="padding-top: 1%;">
                     <div class="contact">
-                        <i class="fas fa-map-marker-alt" style="color: #666666;"></i>
+                        <div><img src="../images/Map-Pin.png" alt=""></div>
                         <div class="contact-text"> Store Location: Lincoln- 344, Illinois, Chicago, USA</div> 
                     </div>
 
@@ -28,9 +30,9 @@
                         <div style="margin-right:10px;"><img src="../images/ENG.png" alt="ENG"></div>
                         <div style="margin-right:20px;"><img src="../images/USD.png" alt="USD"></div>
                         |
-                        <a href="#">Sign In </a>
+                        <a href="login.html">Sign In </a>
                         /
-                        <a href="#">Sign Up </a>
+                        <a href="signin.html">Sign Up </a>
                     </div>
                     
                 </div>
@@ -39,18 +41,21 @@
                 <div class="content-wrapper" style="margin-top: 15px;">
                         <div class="middle">
                             <div id="logo"><a href="template.html"><img src="../images/LogoLogo.png" alt="" style="max-width: 100%;  height: auto;"></a></div>
-
                             <div id="search-bar">
                                 <input type="text" placeholder="Search...">
                                 <button type="submit">Search</button>
                             </div>
                             <div class="icon-call-now">
-                                <div class="call-phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                                <div class="icon-call-now-content">
-                                    <div id="icon-call-now-text1">Customer Services</div>
-                                    <div id="icon-call-now-text2">(219) 555-0114</div>
+                                <div><img src="../images/product-icon/heart-white.png" alt=""></div>
+                                <div><img src="../images/product-icon/Devider.png" alt=""></div>
+                                <a href="../html/cart.html" class="cart-shop">
+                                    <img src="../images/product-icon/cart-bag-black.png" alt="">
+                                    <div class="product-cnt"><span id="count-sp">0</span></div>
+                                </a>
+                                <div class="text">
+                                    <p>Shopping cart:</p>
+                                    <p style="font-size: 14px;">$<span class="prices" id="prices">57.00</span></p>
                                 </div>
-                                
                             </div>
                             
                         </div>
@@ -59,31 +64,33 @@
                 <div class="nav-link-bar">
                     <div class="custom-select">
                         <div class="select-selected">
-                            <div class="select-menu-icon"><i class="fa-solid fa-bars"></i></div>All Categories
+                            <div class="select-menu-icon">
+                                <div class="menu-img"><img src="../images/menu-icon/menu-icon.png" alt=""></div>
+                            </div>
+                            All Categories
                         </div>
                         <div class="select-items">
-                            <div><a href=""><i class="fa-solid fa-apple-whole" id="select-menu-item"></i>Fresh Fruit</a></div>
-                            <div><a href="products.html"><i class="fa-regular fa-lemon" id="select-menu-item"></i>Vegetables</a></div>
-                            <div><a href=""><i class="fa-solid fa-fish-fins" id="select-menu-item"></i>River Fish</a></div>
-                            <div><a href=""><i class="fa-solid fa-bacon" id="select-menu-item"></i>Chicken & Meat</a></div>
-                            <div><a href=""><i class="fa-solid fa-wine-bottle" id="select-menu-item"></i>Drink & Water</a></div>
-                            <div><a href=""><i class="fa-solid fa-ice-cream" id="select-menu-item"></i>Cake & Bread</a></div>
-                            <div><a href=""><i class="fa-solid fa-bread-slice" id="select-menu-item"></i>Butter & Cream</a></div>
-                            <div><a href=""><i class="fa-solid fa-utensils" id="select-menu-item"></i>Cooking</a></div>
-                            <div><a href=""><i class="fa-solid fa-plus" id="select-menu-item"></i>View all Categories</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/apple-icon.png" alt=""></div>Fresh Fruit</a></div>
+                            <div class="per-item"><a href="../html/products.html"><div class="select-icon"><img src="../images/menu-icon/salad-icon.png" alt=""></div>Vegetables</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/fish-icon.png"  alt=""></div>River Fish</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/meat-icon.png"  alt=""></div>Chicken & Meat</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/coffee-icon.png"alt=""></div>Drink & Water</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/ice-cream-icon.png" alt=""></div>Yogurt & Ice Cream</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/pie-icon.png" alt=""></div>Cake & Bread</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/cupcake-icon.png" alt=""></div>Butter & Cream</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/food-icon.png" alt=""></div>Cooking</a></div>
+                            <div class="per-item"><a href=""><div class="select-icon"><img src="../images/menu-icon/plus-solid 1.png" alt=""></div>View all Category</a></div>
                         </div>
                     </div>
                     <div class="nav-link">
-                        <a href="#">Home</a>
-                        <a href="#">Shop </a>
+                        <a href="homepage.html">Home</a>
+                        <a href="products.html">Shop </a>
                         <a href="#">Pages </a>
-                        <a href="#">Blog </a>
-                        <a href="#">About Us </a>
-                        <a href="#">Contact Us </a>
+                        <a href="blog.html">Blog </a>
+                        <a href="../html/about-page.html">About Us </a>
+                        <a href="../html/contact.html">Contact Us </a>
                         <div class="nav-link-account">
-                            <a href="#"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                            <img src="../images/Call-Now.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -142,14 +149,10 @@
                                 <div class="tag-box"><p>Low fat</p></div>
                                 <div class="tag-box"><p>Vegetarian</p></div>
                                 <div class="tag-box"><p>Bread</p></div>
-                            </div>
-                            <div class="tag">
                                 <div class="tag-box"><p>Kidfoods</p></div>
                                 <div class="tag-box"><p>Vitamins</p></div>
                                 <div class="tag-box"><p>Snacks</p></div>
                                 <div class="tag-box"><p>Tiffin</p></div>
-                            </div>
-                            <div class="tag">
                                 <div class="tag-box"><p>Meat</p></div>
                                 <div class="tag-box"><p>Launch</p></div>
                                 <div class="tag-box"><p>Dinner</p></div> 
