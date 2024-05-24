@@ -1,103 +1,165 @@
-@media only screen and (min-width: 300px) and (max-width: 650px){
-   .content_password_login{
-      height: 100%;
-      width: 100%;
-      margin-left: 0px;
-   }
-   
-}
-.content{
-    background-color: white;
-    min-height: 550px;
-    
-}
-.content_password_login{
-    
-    border: 1px solid #fbf9f9;
+
+
+ 
+
+ 
+
+
+
+.content_signin_password{
+    margin:0 auto;
+    border: 0px solid #faf6f6;
     border-radius: 7px;
-    width: 550px;
+    width: 36%;
     height: 100%;
-    margin-left: 470px;
-    box-shadow: 10px 10px  20px 20px rgba(232, 232, 232, 0.5) ;
-    margin-top: 80px;  
-    padding-top: 2px; 
-    padding-bottom: 10px; 
-      
+    margin-bottom: 50px;
+    box-shadow: 10px 10px  20px 20px rgba(232, 232, 232, 0.5) ; 
+    margin-top: 81px;  
+    padding-bottom: 3px; 
 }
 
 .input_content_password{
-
     display: flex;
-    flex-direction: column;/*3 cái thành hàng dọc*/
-    gap:13px;/*gap hàng dọc*/
+    flex-direction: column;
+    gap:20px;
     padding-left: 20px;
-   
+    padding-bottom:0px;
+    text-align: center;
+    background-color: white;
 }
-
-
-
-.input_password_content:focus-visible{
-    outline: none;
+.alert_login{
+    margin-left: 25px;
+    color: red;
+    display: none;
 }
-/*3 cái thẻ */
-.input_login_password{
-    border: 1px solid #e8e3e3;
-    padding:10px 7px;
-    width: 89%;
-    height: 25px;
-    display: flex;
-    gap:250px;
-    border-radius: 6px;
-    margin-left: 20px;
+.alert_login_email{
+    margin-left: 25px;
+    color: red;
+    display: none;
 }
 .input_password_content{
     border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 90px;
+    background-color: white;
+}
+.input_password_content:focus-visible{
+    outline: none;
+}
+/*email*/
+.input_password{
+    border: 1px solid #e5dede;
+    padding:7px 7px;
+    margin-bottom: -12px;
+    width: 90%;
+    height: 28px;
+    display: flex;
+    gap:240px;
+    border-radius: 6px;
+    color:#999999;
+}
+/*----la của passwword-----*/
+.input_signin_password{
+
+    border: 1px solid #e5dede;
+    padding:7px 7px;
+    margin-top: 10px;
+    width: 90%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
 }
 
-input[type="checkbox"] {
+.remember_password_content{
+   display: flex;
+   
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 35px;
+   
+}
+
+  input[type="checkbox"] {
     /*transform: scaleX(2) scaleY(1,96); căn theo chiều ngang 2x avf chieu doc 1x*/
     width: 19px;
     height: 19px;
     
   }
-.remember_password_login{
+
+.remember_password_content label{
+    padding-top:2px;
+    height:4px;
+    weight:4px;
+}
+.remember_password_sigin{
     display: flex;
-    align-items: center;
-    margin-left: 20px;
+    gap:100px;
+    padding:10px 20px;
     background-color: white;
+}
+.remember_forgot{
+    padding-left: 20px;
+    display:flex;
+    align-items: center;/*căn chiều dọc theo trục chính giữa */
+    gap:2px;
     
 }
-.button_login_content{
+
+.button_sigin_content{
     border: 1px solid #a8a7a7;
     background-color: #00B207;
-    border-radius: 35px;
-    width: 89%;
-    height: 42px;
-    text-align: center;
-    padding-top: 5px;
+    border-radius: 40px;
+    width: 85%;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 34px;
+    text-align:center;
     color: white;
-    margin-left: 35px;
+    margin-left: 30px;
     
 }
-.button_login_content:hover{
+.button_sigin_content:hover{
     cursor: pointer;
-    background-color: rgb(226, 226, 218);
+    background-color: #a8a7a7;
 }
-.button_login_content:hover .create_login{
-    color:rgb(58, 55, 55);
-}
-.create_login{
-    padding-top: 5px;
-    font-family: poppins;
-    font-weight: 500;
-    font-size: 19px;
-}
-.find_login{
+
+.find_sigin{
+
+    display: flex;
+    font-size:14px;
     padding-left: 20px;
-    padding-top: 6px;
     text-align: center;
-    margin-bottom: 20px;
-   
+    gap:2px;
+    margin-bottom: 10px;
+    
 }
+.find_sigin a{
+    color: #121111;
+    text-decoration: none;
 
-
+    
+}
+#eye img {
+   cursor: pointer;
+}
+@media(max-width:430px){
+    .container{
+        width: 50vw;
+        height: 70%;
+    }
+    .content_signin_password{
+        width:100%;
+        height:89%;
+        margin: 0 auto;
+       
+    }
+    .remember_forgot{
+        font-size: 10px;
+    }
+    .remember_forget{
+        font-size: 10px;
+    }
+ }
