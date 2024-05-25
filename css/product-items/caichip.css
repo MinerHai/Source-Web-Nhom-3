@@ -355,12 +355,13 @@ body{
      
         .share-item{
             .share-item-text{
-                font-size: 9px;
+                font-size: 10px;
             }
             .share-item-icon{
-                
-                font-size: 10px;
-                width: 20%;
+                width: 30%;
+            }
+            .share-item-icon img{
+                height: 50%;
             }
         }
         .info-item-desc{
